@@ -13,9 +13,10 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=3000 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "start:silent": "PORT=3000 BROWSER=none react-scripts start",
     "cy:open": "cypress open",
     "cypress": "start-server-and-test start:silent http://localhost:3000/ cy:open",
     "eject": "react-scripts eject"
